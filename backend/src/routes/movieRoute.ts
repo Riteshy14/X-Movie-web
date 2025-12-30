@@ -1,0 +1,17 @@
+import { Router } from "express";
+import { getMovieDetails, getPopularMovie, getTrailerWithFallback, searchMovie, topRatedMovie, upcomingMovies, watchMovie, } from "../controller/movieController.js";
+import { Userauth } from "../middleware/userAuth.js";
+
+const movieRouter  = Router();
+
+movieRouter.get('/popular', getPopularMovie );
+movieRouter.get('/toprated', topRatedMovie );
+movieRouter.get('/upcoming', upcomingMovies );
+movieRouter.get('/:id/trailer', getTrailerWithFallback );
+movieRouter.get("/:id/details", getMovieDetails);
+movieRouter.get("/search", searchMovie);
+movieRouter.post('/watch',Userauth, watchMovie )
+
+export {
+    movieRouter
+}
