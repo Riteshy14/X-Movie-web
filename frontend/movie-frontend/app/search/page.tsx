@@ -41,12 +41,13 @@ export default function Search() {
         show="hidden"
       />
 
-      <div className="pt-60 text-white/95 flex-col justify-items-center">
-        <p className="md:text-5xl text-3xl text-center font-semibold">
-          <span className="text-red-500">ᯓ★</span> Discover Your Next Favorite{" "}
-          <span className="text-red-500">★ᯓ</span>
+      <div className=" pt-30 md:pt-60 text-white/95 flex-col justify-items-center">
+        <p className="md:text-5xl flex-col  text-3xl w-full text-center font-semibold">
+          <span className="text-red-500">ᯓ★</span> Discover Your <span className="text-red-500 xl:hidden">★ᯓ</span>
+          <span className="block xl:inline"> Next  Favorite </span> 
+          <span className="text-red-500 hidden xl:inline">★ᯓ</span>
         </p>
-        <div className="2xl:w-1/4 w-1/2 sm:w-full mx-auto">
+        <div className="2xl:w-1/4  w-full mx-auto">
           <p className="text-md text-gray-300 md:text-xl pt-4 text-center">
             Search through thousands of movies, TV shows, and anime series
           </p>
