@@ -1,8 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "frontend/movie-frontend/package.json", 
-      "use": "@vercel/next"
-    }
+  "rewrites": [
+    { "source": "/watch/:id", "destination": "/watch/[id]" }
   ]
 }
