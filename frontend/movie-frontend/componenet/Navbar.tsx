@@ -51,7 +51,7 @@ export default function Navbar({logo,navicon,profiletext, profilebg,show}:Navbar
     >
       <div className="flex items-center  justify-between px-2 md:px-14 py-4">
         {/* LEFT: WEBSITE NAME */}
-        <div onClick={()=> Router.push('/')} className={`text-${logo} text-3xl  xl:pl-30 2xl:pl-50 hover:cursor-pointer font-extrabold tracking-wide`}>
+        <div onClick={()=> Router.push('/')} className={`text-${logo} text-xl sm:text-2xl md:text-3xl  xl:pl-30 2xl:pl-50 hover:cursor-pointer font-extrabold tracking-wide`}>
           🎬 X-MOVIE
         </div>
 

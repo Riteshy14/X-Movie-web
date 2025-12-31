@@ -53,7 +53,7 @@ export function Hero() {
       <div className="relative z-20 h-full pl-2 sm:pl-4 md:pl-1 xl:pl-30 2xl:pl-50 flex items-center">
         <div className="md:ml-16 max-w-xl mt-64 ml-2 md:mt-20">
           {/* TITLE */}
-          <h1 className="text-white text-5xl font-extrabold mb-4 leading-tight">
+          <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
             {movie.name || movie.title}
           </h1>
 

@@ -58,7 +58,7 @@ export function PopularMovies() {
 
   return (
     <div className="container mt-20 mb-20 mx-auto p-4 relative">
-      <h1 className="flex items-center text-4xl font-medium pl-2 pb-4">
+      <h1 className="flex items-center text-2xl sm:text-3xl md:text-4xl font-medium pl-2 pb-4">
         <span className="w-2 h-8 mr-2 rounded-3xl bg-red-500" />Popular Movies
       </h1>
 
