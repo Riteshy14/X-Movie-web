@@ -69,7 +69,7 @@ export function Upcoming() {
       ) : (
         <div className="relative">
           {movie.length === 0 ? (
-            <p className="text-center text-xl">No movies found</p>
+            <p className="text-center text-xl">Render server on Sleep 😅 FREE TIER wait</p>
           ) : (
             <div>
               {/* Flex container without wrap */}
