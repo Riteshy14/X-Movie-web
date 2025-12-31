@@ -64,7 +64,7 @@ export function Hero() {
             </span>
             <span className="text-white font-medium backdrop:backdrop-blur-xl border flex justify-center items-center gap-1.5 border-white/20 py-1 px-3  rounded-4xl">
             <span className='flex justify-center items-center'>
-              <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/>
               </svg>
 
@@ -86,7 +86,11 @@ export function Hero() {
             </Link>
 
             <button className="flex items-center backdrop:backdrop-blur-xl hover:cursor-pointer gap-2  border border-gray-500 text-white px-8 py-2 rounded-md text-lg font-semibold hover:scale-105 active:scale-95 transition">
-              🛈 See More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 dark:text-white">
+             <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+               </svg>
+
+              See More
             </button>
           </div>
         </div>
