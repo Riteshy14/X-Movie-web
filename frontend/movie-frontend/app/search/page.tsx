@@ -52,10 +52,10 @@ export default function Search() {
           </p>
         </div>
 
-        <div className="flex ml-5 mr-5 items-center mt-10 gap-4 border border-gray-600 bg-gray-700/40 backdrop:backdrop-blur-lg p-4 rounded-md">
-          <div className="border focus-within:border-red-500 border-gray-600 bg-gray-700/40 pr-2 p-0.5 rounded">
+        <div className="flex-col  md:grid md:grid-cols-3 items-center mt-10 md:gap-4 border border-gray-600 bg-gray-700/40 backdrop:backdrop-blur-lg p-4 rounded-md">
+          <div className="border mb-2 md:mb-0 md:col-span-1 focus-within:border-red-500 border-gray-600 bg-gray-700/40 pr-2 p-0.5 rounded">
             <select
-              className="text-white bg-gray-700/40 p-2 outline-none"
+              className="text-white w-full bg-gray-700/40 p-2 outline-none"
             >
               <option value="">Movies & TV Shows</option>
               <option value="">Movies</option>
@@ -64,10 +64,10 @@ export default function Search() {
             </select>
           </div>
 
-          <div className="flex items-center w-full bg-gray-700/40 backdrop:backdrop-blur-lg focus-within:border-red-500 rounded border border-gray-600 p-1 gap-2">
+          <div className="flex items-center w-full md:col-span-2 bg-gray-700/40 backdrop:backdrop-blur-lg focus-within:border-red-500 rounded border border-gray-600 p-1 gap-2">
             <span className="pt-1 pl-1">🔍︎</span>
             <input
-              className="xl:w-96 w-full outline-none bg-gray-700/40"
+              className=" w-full outline-none bg-gray-700/40"
               onChange={(e) => setQuery(e.target.value)}
               type="text"
               value={query}
