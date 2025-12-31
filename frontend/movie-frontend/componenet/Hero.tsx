@@ -23,7 +23,7 @@ export function Hero() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % movies.length);
-    }, 90000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [movies.length]);

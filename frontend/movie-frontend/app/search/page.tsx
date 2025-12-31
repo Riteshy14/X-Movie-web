@@ -66,7 +66,11 @@ export default function Search() {
           </div>
 
           <div className="flex items-center w-full md:col-span-2 bg-gray-700/40 backdrop:backdrop-blur-lg focus-within:border-red-500 rounded border border-gray-600 p-1 gap-2">
-            <span className="pt-1 pl-1">🔍︎</span>
+            <span className="pt-1 pl-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+           <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+         </svg>
+            </span>
             <input
               className=" w-full outline-none bg-gray-700/40"
               onChange={(e) => setQuery(e.target.value)}
