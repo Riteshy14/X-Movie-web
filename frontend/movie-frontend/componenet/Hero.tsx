@@ -23,7 +23,7 @@ export function Hero() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % movies.length);
-    }, 5000);
+    }, 90000);
 
     return () => clearInterval(interval);
   }, [movies.length]);
@@ -36,18 +36,18 @@ export function Hero() {
     <section className="relative h-screen w-full overflow-hidden">
       {/* BACKDROP IMAGE */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+        className="absolute inset-0 bg-cover bg-bottom transition-opacity duration-1000"
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
         }}
       />
 
       {/* 🔥 TOP DARK FADE (FOR NAVBAR VISIBILITY) */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/90 via-black/50 to-transparent z-10" />
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/80 to-transparent z-10" />
 
       {/* SIDE + BOTTOM GRADIENTS */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/5 to-black/20" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/50 to-black" />
 
       {/* TEXT CONTENT */}
       <div className="relative z-20 h-full pl-2 sm:pl-4 md:pl-1 xl:pl-30 2xl:pl-50 flex items-center">

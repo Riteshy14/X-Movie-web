@@ -30,7 +30,9 @@ export default function Search() {
   console.log("Search results:", results);
 
   return (
-    <div className="min-h-screen bg-linear-to-t from-black/90 to-black">
+    <div className="bg-linear-to-t from-black/90 to-black">
+
+    <div className="min-h-screen container mx-auto ">
       <Navbar
         logo="white"
         navicon="white"
@@ -85,7 +87,7 @@ export default function Search() {
         {!searched && <Upcoming />}
 
         {searched && Array.isArray(results) && results.length > 0 && (
-          <div className="container justify-items-center mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className=" justify-items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {results.map((item) => (
               <MovieCard
                 key={item.id}
@@ -107,5 +109,6 @@ export default function Search() {
         )}
       </div>
     </div>
+                </div>
   );
 }

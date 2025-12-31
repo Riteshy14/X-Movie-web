@@ -58,12 +58,17 @@ export default function Navbar({logo,navicon,profiletext, profilebg,show}:Navbar
         {/* RIGHT: MENU */}
         <div className={`flex items-center  xl:pr-30 2xl:pr-50 gap-5 md:gap-8 text-sm text-${navicon} `}>
           <span onClick={()=> Router.push('/')} className="cursor-pointer flex items-center gap-1  text-xl hover:scale-105 hover:font-bold">
-            <svg className="w-6 h-6 flex items-center mb-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 flex items-center mb-1  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
             </svg>Home</span>
           <span onClick={()=> Router.push('/about')} className="cursor-pointer text-xl hover:scale-105 hover:font-bold">About</span>
 
-          <button onClick={()=> Router.push('/search')} className={`text-2xl font-extrabold hover:scale-105 hover:font-bold  hover:cursor-pointer ${show}`}>🔍︎</button>
+          <button onClick={()=> Router.push('/search')} className={`text-2xl font-extrabold hover:scale-105 hover:font-bold  hover:cursor-pointer ${show}`}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+           <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+         </svg>
+
+          </button>
 
           <div onClick={handleclick} className={`w-8 h-8 rounded-full border-2 border-white bg-${profilebg} text-${profiletext} flex items-center justify-center text-xl  font-semibold cursor-pointer`}>
             <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
